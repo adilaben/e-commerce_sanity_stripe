@@ -1,4 +1,4 @@
-import { FooterBanner, HeroBanner } from "@/components";
+import { FooterBanner, HeroBanner, Product } from "@/components";
 import { client } from "@/lib/client";
 import React from "react";
 
@@ -11,7 +11,9 @@ const Home = ({ products, bannerData }) => {
         <p>Speaker of many variations</p>
       </div>
       <div className="products-container">
-        {products?.map((product) => product.name)}
+        {products?.map((product) => (
+          <Product key={product._id} product={product} />
+        ))}
       </div>
       <FooterBanner />
     </>
