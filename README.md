@@ -1,38 +1,52 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h1 align="center">E-Commerce Website</h1>
+
+<h2 align="center"> An E-commerce website built using Next.js, Sanity, and Stripe for handling payments. 
+</h2>
+
+<h3 align="center">Home Page</h3>
+
+![home-page](https://user-images.githubusercontent.com/82048235/215295100-6e9aef80-69f6-457d-b5a3-8b8c588b3ff6.png)
+
+## Key Features ⭐
+
+- Add products to a shopping cart
+- Secure payments using Stripe
+- Product management for administrators
+- Customizable layout using Sanity
+- Mobile responsive.
+
+## Tech Stack 💻
+
+- Next.js
+- Sanity
+- Stripe
 
 ## Getting Started
 
-First, run the development server:
+- Clone the repository
+- npm install (for both the root of the project and sanity_ecommerce folder)
+- Create a .env file in the root of the project and add the following environment variables:
+  - NEXT_PUBLIC_SANITY_TOKEN=[your Sanity token]
+  - NEXT_PUBLIC_STRIPE_SECRET_KEY=[your Stripe secret key]
+  - NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=[your Stripe publish key]
+- npm run dev
+- cd sanity_ecommerce
+- npm run dev
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+<h2 align="center">Other Pages</h2>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<h3 align="center">Product Details Page </h3>
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+![product-details](https://user-images.githubusercontent.com/82048235/215295119-7480a446-ab5f-4bcd-ba49-48bb2a2feed2.png)
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+<h3 align="center">Shopping Cart Page </h3>
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+![shopping-cart](https://user-images.githubusercontent.com/82048235/215295135-d9826c6a-4ede-4988-8315-29a77034eb35.png)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+<h3 align="center">Payment Page </h3>
 
-## Learn More
+![payment-page](https://user-images.githubusercontent.com/82048235/215295147-b0b183e6-8607-4939-88b3-e2c7cf67fd6a.png)
 
-To learn more about Next.js, take a look at the following resources:
+<h3 align="center">Success Page </h3>
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+![success-page](https://user-images.githubusercontent.com/82048235/215295152-f2c77e55-60d4-4eae-b511-603bf2a00a2d.png)
