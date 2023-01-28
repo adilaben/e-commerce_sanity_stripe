@@ -1,7 +1,17 @@
 import React from "react";
+import Link from "next/link";
+import { Cart } from "./";
 
-const NavBar = () => {
-  return <div>NavBar</div>;
+const Navbar = () => {
+  return (
+    <div className="navbar-container">
+      <p className="logo">
+        <Link href="/">AB E-STORE</Link>
+      </p>
+
+      <Cart />
+    </div>
+  );
 };
 
-export default NavBar;
+export default Navbar;

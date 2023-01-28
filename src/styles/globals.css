@@ -312,6 +312,10 @@ text-align: end;
   display: flex;
   gap: 10px;
 }
+
+.icons {
+  cursor: pointer;
+}
  .cart-heading{
   display: flex;
   align-items: center;
