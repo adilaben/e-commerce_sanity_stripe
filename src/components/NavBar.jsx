@@ -8,7 +8,6 @@ const Navbar = () => {
       <p className="logo">
         <Link href="/">AB E-STORE</Link>
       </p>
-
       <Cart />
     </div>
   );
