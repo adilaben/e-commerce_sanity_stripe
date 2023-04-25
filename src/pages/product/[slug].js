@@ -13,7 +13,6 @@ const ProductDetails = ({ products, product }) => {
   const { image, name, details, price } = product;
   const [index, setIndex] = useState(0);
   const { decQty, incQty, qty, onAdd, setShowCart } = useStateContext();
-
   const handleBuyNow = () => {
     onAdd(product, qty);
 
@@ -28,13 +27,15 @@ const ProductDetails = ({ products, product }) => {
             <img
               src={urlFor(image && image[index])}
               className="product-detail-image"
+              alt={name}
             />
           </div>
           <div className="small-images-container">
             {image?.map((item, i) => (
               <img
                 key={i}
-                src={urlFor(item)}
+                alt={name}
+                src={urlFor(item) + "?h=250"}
                 className={
                   i === index ? "small-image selected-image" : "small-image"
                 }

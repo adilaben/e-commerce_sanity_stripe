@@ -8,6 +8,11 @@ const Layout = ({ children }) => {
     <div className="layout">
       <Head>
         <title>AB E-Store</title>
+        <meta
+          name="description"
+          content="Modern Full Stack ECommerce Application with Stripe."
+          key="desc"
+        />
       </Head>
       <header>
         <Navbar />
